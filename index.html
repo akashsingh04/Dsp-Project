@@ -37,19 +37,30 @@
 					<!-- Start edit here  -->
 					Speech Recognition Technology can be embedded in various real time applications in order to increase the human-computer interaction. 
 					From robotics to health care and aerospace, from interactive voice response systems to mobile telephony and telematics, speech recognition technology have enhanced the human-machine interaction. 
-					Gender recognition is an important component for the application embedding speech recognition as it reduces the computational complexity for the further processing in these applications. We plotted spectrogram
-					of dataset containg male and female voices. Image processing was done on these spectrograms to extract features such as varying pitch and formant frequencies in male and female voice. 
+					Gender recognition is an important component for the application embedding speech recognition as it reduces the computational complexity for the further processing in these applications.Human speech has hierarchical structure to have meaningful information. 
+					Speech is not a sequence of steady state sounds, abruptly changing from one to other.It consists of sentences, sentences can be divided in to words, words are constituted by phonemes which are the basic voice construction elements. 
+	                                We use language every day without devoting much thought to the process.A study of acoustic characteristics of any language begins with the phonetic Analysis of that language. 
+					Speech is one of the most information-laid signals, speech sounds have a rich and multi-layered temporal variation that convey emotions, words, intention, expressions, intonation, accent, speaker identity, gender, age, style of speaking, state of health of speaker. 
+					The major concern in any language will be the identification, separation and processing of vowels and consonants of that language. 
+					In our study for analysis we are using the pre-recorded samples of various subjects differing in age and gender .
+					the analysis is carried out with respect to basic acoustic features and spectrogram, to extract formant frequency, pitch and intensity.We present a method that analyzes a two-dimensional magnitude
+                                        spectrogram S(f, t) into its local constituent spectro-temporal amplitudes A(f, t), frequencies F(f, t), orientations Θ(f, t), andphases φ(f, t). The method operates by performing a twodimensional
+                                        local Gabor-like analysis of the spectrogram, retainingonly the parameters of the 2D-Gabor filter with maximal amplitude
+                                        response within the local region.
 					<!-- Stop edit here -->
 
 				</div>
 			</div>
 
 			<div class="section">
-				<div class="heading">1. Introduction</div>
+				<div class="heading">1. Motivation</div>
 				<div class="text">
 
 					<!-- Start edit here  -->
-					Write a introduction to your project here.
+					In recent years, several studies investigated the use of the spectrogram (or spectrogram-like transformations) as a basis for
+                                        extracting perceptual cues from speech . The application domains in which these studies were performed include speech
+                                        intelligibility analysis , emotion recognition, and automatic speech recognition. The outcomes of these studies
+                                        show that socially informative perceptual cues can be extracted from the spectro-temporal patterns in the spectrogram. 
 					<!-- Stop edit here -->
 
 				</div>
@@ -59,7 +70,7 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						The objective of this problem is to do spectrogram analysis of speech signal to identify gender from the given signal.
 						<!-- Stop edit here -->
 
 					</div>
@@ -91,7 +102,10 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Describe your approach briefly here.
+						The problem requires us to do spectrogram analysis of speech signal of various samples to extract features 
+						such as pitch and formant frequencies.For this processing Gabor filter and a method for the extraction of such cues that is
+                                                based on the Gabor transform are used. A local decomposition in terms of the (logarithmic) Gabor transform has become one of the main
+                                                transforms for feature extraction in image analysis.
 						<!-- Stop edit here -->
 
 					</div>
@@ -101,8 +115,8 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop edit here -->
+						       
+              					<!-- Stop edit here -->
 
 					</div>
 				</div>
@@ -113,7 +127,12 @@
 				<div class="text">
 
 					<!-- Start edit here  -->
-					Write something here.
+					The process of speech sequence segmenting comprises of the following steps:
+						  a. Preprocessing:Preprocessing of speech signals is considered a crucial step in the development of a robust and efficient speech 
+						                   or speaker recognition system.STE based methods of speech signal segregation utilizes the fact  that  energy  in  the  voiced  region  is  greater  than  in  the  silence/unvoiced  region.  So,  a  small  window 
+                                                                   is  taken  and  the  energy  of  the  window  calculated;  if  the  total  energy of the window is more than the chosen threshold, then samples  of  the  window  are  retrieved,  otherwise  dropped. 
+						                   We  conducted  two  different  experiments;  first  one  with  a  non-overlapping  moving  window  of  fixed  size,  and  another  with  an overlapping moving window of fixed size. 
+						                   The overlapping moving  window  technique  has  been  used  to  prevent  valuable  information loss.The selection of values has been based on the optimization of the following approximate cost function: 
 					<!-- Stop edit here -->
 
 				</div>
