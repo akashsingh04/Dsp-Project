@@ -1,57 +1,38 @@
 <html>
 	<head>
-	 <!-- Compiled and minified CSS -->
-  
 		<style type="text/css">
 			body{font-family: sans-serif;}
 			p{display: inline-block;}
 			img{display: block;}
-
+			.container{width: 90%;position absolute;margin: auto;}
+			.title{position: relative;width: 90%;margin: auto;text-align: center;font-weight: bold;font-size: 18px;padding: 1%;}
+			.section{position: relative;width: 90%;margin: auto;padding: 2%;}
+			.subsection{position: relative; width: 98%;text-align: justify;padding: 10px;}
+			.heading{position: relative; width: 98%;text-align: left;font-size: 14px;font-weight: bold;}
+			.text{width: 95%;font-size: 12px;text-align: justify;padding: 10px 0px 10px 0px;}
+			.authors{position: relative;width: 80%;margin: auto;padding: 2%;font-style: italic;text-align: center;font-size: 12px;}
 			.image{width: 95%;font-size: 12px;text-align: left;}
-			div{
-				font-size: 18px !important;
-				font-family: "Arial", Helvetica, serif;
-
-}
- html {
-    font-family: GillSans, Calibri, Trebuchet, sans-serif;
-  }
-
 		</style>
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	</head>
-	<body class="card-panel grey lighten-2 ">
-
+	<body>
 		<div class="container">
-			<div  class="card-panel brown lighten-5 " style="font-size: 20px!important"><center>Gender Classification from Speech using Spectrogram and image processing technique</center></div>
+			<div class="title">Gender Classification from Speech using Spectrogram and image processing technique</div>
 
-			<div class="col s12 m7">
-    <h2 class="header"></h2>
-    <div class="card horizontal">
-      
-      <div class="card-stacked">
-        <div class="card-content">
-        <center>
-          <p>Akash Singh, Roll No.: 150108002, Branch: EEE<br>
-				Sagar Kohli, Roll No.: 150102058, Branch: ECE<br>
-				Somya Parashar, Roll No.: 150102066, Branch: ECE<br>
-				Devesh Prajapat, Roll No.: 150102015, Branch: ECE</p></center>
-        </div>
-      
-      </div>
-    </div>
-  </div>
+			<div class="authors">
 
-			
+				<!-- Start edit here  -->
+				<p>Akash Singh, Roll No.: 150108002, Branch: EEE</p>; &nbsp; &nbsp;
+				<p>Sagar Kohli, Roll No.: 150102058, Branch: ECE</p>; &nbsp; &nbsp;
+				<p>Somya Parashar, Roll No.: 150102066, Branch: ECE</p>; &nbsp; &nbsp;
+				<p>Devesh Prajapat, Roll No.: 150102015, Branch: ECE</p>; &nbsp; &nbsp;
+				<!-- Stop edit here -->
+
+			</div>
 
 
 			<div class="section">
-				<div class="heading card-panel deep-purple lighten-4"><center>Abstract</center></div>
-				<div class="text card-panel ">
+				<div class="heading">Abstract</div>
+				<div class="text">
 
 					<!-- Start edit here  -->
 					Speech Recognition Technology can be embedded in various real time applications in order to increase the human-computer interaction. 
@@ -72,8 +53,8 @@
 			</div>
 
 			<div class="section">
-				<div class="heading card-panel deep-purple lighten-4">1. Motivation</div>
-				<div class="text card-panel">
+				<div class="heading">1. Motivation</div>
+				<div class="text">
 
 					<!-- Start edit here  -->
 					In recent years, several studies investigated the use of the spectrogram (or spectrogram-like transformations) as a basis for
@@ -85,8 +66,8 @@
 				</div>
 
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">1.1 Introduction to Problem</div>
-					<div class="text card-panel">
+					<div class="heading">1.1 Introduction to Problem</div>
+					<div class="text">
 
 						<!-- Start edit here  -->
 						The objective of this problem is to do spectrogram analysis of speech signal to identify gender from the given signal.
@@ -96,8 +77,8 @@
 				</div>
 
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">1.2 Figure</div>
-					<div class="image card-panel">
+					<div class="heading">1.2 Figure</div>
+					<div class="image">
 
 						<!-- Start edit here  -->
 						Block diagram of the system.
@@ -107,8 +88,8 @@
 					</div>
 				</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">1.3 Literature Review</div>
-					<div class="text card-panel">
+					<div class="heading">1.3 Literature Review</div>
+					<div class="text">
 
 						<!-- Start edit here  -->
 						Write something here.
@@ -117,8 +98,8 @@
 					</div>
 				</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">1.4 Proposed Approach</div>
-					<div class="text card-panel">
+					<div class="heading">1.4 Proposed Approach</div>
+					<div class="text">
 
 						<!-- Start edit here  -->
 						The problem requires us to do spectrogram analysis of speech signal of various samples to extract features 
@@ -130,8 +111,8 @@
 					</div>
 				</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">1.5 Report Organization</div>
-					<div class="text card-panel">
+					<div class="heading">1.5 Report Organization</div>
+					<div class="text">
 
 						<!-- Start edit here  -->
 						       
@@ -142,25 +123,25 @@
 			</div>
 
 			<div class="section">
-				<div class="heading card-panel deep-purple lighten-4">2. Proposed Approach</div>
-				<div class="text card-panel">
+				<div class="heading">2. Proposed Approach</div>
+				<div class="text">
 
 					<!-- Start edit here  -->
-					The process of speech sequence segmenting comprises of the following steps:<br><br>
-						  a. <b>Preprocessing:</b> Preprocessing of speech signals is considered a crucial step in the development of a robust and efficient speech 
+					The process of speech sequence segmenting comprises of the following steps:
+						  a. Preprocessing:Preprocessing of speech signals is considered a crucial step in the development of a robust and efficient speech 
 						                   or speaker recognition system.STE based methods of speech signal segregation utilizes the fact  that  energy  in  the  voiced  region  is  greater  than  in  the  silence/unvoiced  region.  So,  a  small  window 
                                                                    is  taken  and  the  energy  of  the  window  calculated;  if  the  total  energy of the window is more than the chosen threshold, then samples  of  the  window  are  retrieved,  otherwise  dropped. 
 						                   We  conducted  two  different  experiments;  first  one  with  a  non-overlapping  moving  window  of  fixed  size,  and  another  with  an overlapping moving window of fixed size. 
-						                   The overlapping moving  window  technique  has  been  used  to  prevent  valuable  information loss. <br><br>
+						                   The overlapping moving  window  technique  has  been  used  to  prevent  valuable  information loss. 
 					          
-					           b. <b>Spectrogram Plotting:</b> Spectrogram is a visual representation of the spectrum of frequencies of sound or other signal as they vary with time or some other variable.The temporal resolution of the spectrogram is defined by a single parameter  t, the length of the time segments or time resolution.
+					           b. Spectrogram Plotting: Spectrogram is a visual representation of the spectrum of frequencies of sound or other signal as they vary with time or some other variable.The temporal resolution of the spectrogram is defined by a single parameter  t, the length of the time segments or time resolution.
 					                                    The spectrogram is created with a Hanning window and an overlap of  t/2.A common format is a graph with two geometric dimensions: one axis represents time or RPM,the other axis is frequency; a third dimension indicating the amplitude of a particular frequency at a particular 
 					                                    time is represented by the intensity or color of each point in the image.Audio would usually be represented with a logarithmic amplitude axis (in decibels, or dB), and frequency would be linear to emphasize harmonic relationships.This process essentially corresponds to
-					                                    computing the squared magnitude of the short-time Fourier transform (STFT) of the signal s(t) — that is, for a window width w    Spectrogram(t,w)=|STFT(t,w)|^2.<br><br>
+					                                    computing the squared magnitude of the short-time Fourier transform (STFT) of the signal s(t) — that is, for a window width w    Spectrogram(t,w)=|STFT(t,w)|^2.
 					
 					                                                                                       
 					
-                                                   c.  <b>Gabor Transform:</b>      In the log-Gabor method the spectrogram is generated by applying the short-time Fourier transform (STFT) to the speech
+                                                   c.  Gabor Transform:      In the log-Gabor method the spectrogram is generated by applying the short-time Fourier transform (STFT) to the speech
                                                                              signal. The temporal resolution of the spectrogram is defined by a single parameter  t, the length of the time segments or time resolution.
 					                                     The spectrogram is created with a Hanning window and an overlap of  t/2.
                                                                              The input for the log-Gabor transform is the logarithm of the spectrogram, as is common in, for instance, automatic speech
@@ -172,14 +153,14 @@
 					                                     or oriented (e.g. attack and decay).
 					                                                                           G(f, t) = A · W(f, t) · cos(2πF(ˆx + Φ)) (1)  where xˆ = tcosΘ + fsinΘ (2)
                                                                              and W(f, t) is a Gaussian-like window (to be defined later). For phase estimation, we will need the notion of a complex Gabor, which will consist of real and imaginary versions of equation 1 in quadrature phasee
-					                                                                            G∗(f, t) = A · W(f, t) · ej(2πF (ˆx+Φ)    <br><br>
+					                                                                            G∗(f, t) = A · W(f, t) · ej(2πF (ˆx+Φ)    
 					         
-					         d. <b>Feature Extraction and Classifier:</b> Maximum intensity part of output is analysed and they are send inside classifier where with the help of k-mean clustering we calculate avearage value of intensity output for male and female voices. <br><br>                                                              
+					         d. Feature Extraction and Classifier: Maximum intensity part of output is analysed and they are send inside classifier where with the help of k-mean clustering we calculate avearage value of intensity output for male and female voices.                                                               
 					       
-                                                 e. <b>Supervised Learning:</b> In k-NN classification, the output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common 
+                                                 e. Supervised Learning: In k-NN classification, the output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common 
 					                                 among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor. 
 					                                 The k-nearest neighbours (kNN) model was trained on a large numbers of voice samples to incorporate total variability in feature space. Hence, parameters of the model were set accordingly to classify speakers.
-						                         This model was applied on a test data to cluster the 20ms time frames pertaining to individual speakers. For every 1 sec (50 time frames of 20ms each), the mode of the data was found and assigned to the whole 1 sec time frame. <br><br>
+						                         This model was applied on a test data to cluster the 20ms time frames pertaining to individual speakers. For every 1 sec (50 time frames of 20ms each), the mode of the data was found and assigned to the whole 1 sec time frame. 
 						                         
 				<!-- Stop edit here -->
 
@@ -187,10 +168,10 @@
 			</div>
 
 			<div class="section">
-				<div class="heading card-panel deep-purple lighten-4">3. Experiments &amp; Results</div>
+				<div class="heading">3. Experiments &amp; Results</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">3.1 Dataset Description</div>
-					<div class="text card-panel">
+					<div class="heading">3.1 Dataset Description</div>
+					<div class="text">
 
 						<!-- Start edit here  -->
 						The TSP speech contains over 1400 utterances spoken by 24 speakers (half male, half female). This report describes the TSP speech database. 
@@ -203,8 +184,8 @@
 
 					</div>
 					
-					<div class="heading card-panel deep-purple lighten-4">3.1 Code Link</div>
-					<div class="text card-panel">
+					<div class="heading">3.1 Code Link</div>
+					<div class="text">
 
 						
 					</div>
@@ -213,10 +194,10 @@
 			</div>
 
 			<div class="section">
-				<div class="heading card-panel deep-purple lighten-4">4. Conclusions</div>
+				<div class="heading">4. Conclusions</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">4.1 Summary</div>
-					<div class="text card-panel">
+					<div class="heading">4.1 Summary</div>
+					<div class="text">
 
 						<!-- Start edit here  -->
 						Write something here.
@@ -225,11 +206,11 @@
 					</div>
 				</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">4.2 Future Extensions</div>
-					<div class="text card-panel">
+					<div class="heading">4.2 Future Extensions</div>
+					<div class="text ">
 
 						<!-- Start edit here  -->
-						Write something here.
+						Analysing signals and processing it with the help of spectrogram is not yet explored fully. We will be working to explore further more on techniques to extract various features from spectrogram which can be used to analyse signal. The development of filters that can extract various other features from spectrogram can also be something to work upon.   
 						<!-- Stop edit here -->
 
 					</div>
