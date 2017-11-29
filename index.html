@@ -111,7 +111,12 @@
 					<div class="text card-panel">
 
 						<!-- Start edit here  -->
-						Write something here.
+						The references used for the project are various papers published on spectrogram, Gabor filters and Short time Analysis :
+						a. Spectro-Temporal Analysis of Speech Using 2-D Gabor Filters Tony Ezzat, Jake Bouvrie, Tomaso Poggio Center for Biological and Computational Learning, McGovern Institute for Brain Research Massachusetts Institute of Technology, Cambridge, MA
+						b.Max-Gabor Analysis and Synthesis of Spectrograms Tony Ezzat, Jake Bouvrie, Tomaso Poggio Center for Biological and Computational Learning, McGovern Institute for Brain Research Massachusetts Institute of Technology, Cambridge, MA
+						c.The log-Gabor method: speech classification using spectrogram image analysis Harm Buisman and Eric Postma Tilburg center for Cognition and Communication, Tilburg University, Tilburg, The Netherlands
+						d. “Gender Based Acoustic Features and Spectrogram Analysis for Kannada Phonetics” 1Shiva Prasad.K.M, 2Anil Kumar.C, 3M.B.Manjunatha, 4KodandaRamaiah.G.N
+					
 						<!-- Stop edit here -->
 
 					</div>
@@ -129,15 +134,7 @@
 
 					</div>
 				</div>
-				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">1.5 Report Organization</div>
-					<div class="text card-panel">
-
-						<!-- Start edit here  -->
-						       
-              					<!-- Stop edit here -->
-
-					</div>
+				
 				</div>
 			</div>
 
@@ -172,7 +169,10 @@
 					                                     or oriented (e.g. attack and decay).
 					                                                                           G(f, t) = A · W(f, t) · cos(2πF(ˆx + Φ)) (1)  where xˆ = tcosΘ + fsinΘ (2)
                                                                              and W(f, t) is a Gaussian-like window (to be defined later). For phase estimation, we will need the notion of a complex Gabor, which will consist of real and imaginary versions of equation 1 in quadrature phasee
-					                                                                            G∗(f, t) = A · W(f, t) · ej(2πF (ˆx+Φ)    <br><br>
+					                                                                            G∗(f, t) = A · W(f, t) · ej(2πF (ˆx+Φ)    
+					                                                 
+                                                                             Spectrogram is convoluted with Gabor filter to extract high intensity signals which in itself varies highly for male and female.
+                                                                                                    <br><br>
 					         
 					         d. <b>Feature Extraction and Classifier:</b> Maximum intensity part of output is analysed and they are send inside classifier where with the help of k-mean clustering we calculate avearage value of intensity output for male and female voices. <br><br>                                                              
 					       
@@ -219,7 +219,7 @@
 					<div class="text card-panel">
 
 						<!-- Start edit here  -->
-						Write something here.
+						The recorded voice from dataset was pre-processed with non-speech signal eliminated with short time analysis. Frequency of spectrogram was restricted for more precise analysis. With Gabor filter used on output spectrogram, intensity of output was increased by shorting time domain. As Gabor filter points out the dominant features of spectrogram analysed, those dominant features are used to train classifier based on the average vector values, variance of patches of dominant features obtained from Gabor filter.
 						<!-- Stop edit here -->
 
 					</div>
