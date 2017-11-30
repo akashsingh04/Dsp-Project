@@ -189,7 +189,32 @@
 			<div class="section">
 				<div class="heading card-panel deep-purple lighten-4">3. Experiments &amp; Results</div>
 				<div class="subsection">
-					<div class="heading card-panel deep-purple lighten-4">3.1 Dataset Description</div>
+
+				<div class="heading card-panel deep-purple lighten-4">3.1 Analysis</div>
+				<div class="image card-panel">
+
+						<!-- Start edit here  -->
+						While pre-processing input signal there were some unnecessary part in the signal, which can be eliminated. So we calculated energy using ∑ x (t)*x (t) and there after taking a threshold value which was used for eliminating those unnecessary part of signals which couldn’t be used in identifying gender. In our case the threshold value was 0.001.  After pre-processing spectrogram of the remaining signal was plotted with frequency limit of 1000 Hz. The difference in spectrograms before and after the pre-processing can be seen in the fig below. <br><br>
+
+						<center><img src="analysis.png" alt="This text displays when the image is umavailable" width="400px" height=""/></center>
+<br><br>
+The motivation behind upper threshold on the frequency was this <b>‘As over 1000 Hz only formant frequency and consonants were plotted which remained unnecessary in our analysis, so we eliminated it’.</b> 
+<br><br>
+A significant difference between the spectrogram of male and female speech signals can be seen in the figure below.
+<br><br>
+<center><img src="male-female.png" alt="This text displays when the image is umavailable" width="400px" height=""/></center>
+<br><br>
+Now this spectrogram is then divided into several patches of small spectrograms. These small patches of spectrogram were then convolved with our Gabor filter yielding a filtered “energy image” of the spectrogram. Now this 2-D image matrix is converted to a single 1-D vector which was then used as a feature vector to train k-NN with classification as male and female gender.<br><br>
+
+After using k-NN to classify the test samples based on the extracted features, we got an accuracy of 87% which can be improved by eliminating the non-energy patches.
+						
+						<!-- Stop edit here -->
+
+					</div>
+					
+				
+				</div>
+					<div class="heading card-panel deep-purple lighten-4">3.2 Dataset Description</div>
 					<div class="text card-panel">
 
 						<!-- Start edit here  -->
@@ -203,10 +228,10 @@
 
 					</div>
 					
-					<div class="heading card-panel deep-purple lighten-4">3.1 Code Link</div>
+					<div class="heading card-panel deep-purple lighten-4">3.3 Code Link</div>
 					<div class="text card-panel">
 
-						
+						<a href="https://github.com/akashsingh04/Dsp-Project" target="blank">Link To Our Code</a>
 					</div>
 				
 				</div>
